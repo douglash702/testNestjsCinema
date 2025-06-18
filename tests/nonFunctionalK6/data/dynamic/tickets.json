@@ -1,0 +1,16 @@
+[
+  {
+    "movieId": "269aa812-b9f3-4759-867b-f7766e2e617e",
+    "userId": "c15c2e9d-202d-4ceb-9a63-ca438cb1db43",
+    "seatNumber": 61,
+    "price": 6.844567349641006,
+    "showtime": "2025-03-13T00:22:23.985Z"
+  },
+  {
+    "movieId": "af1cb466-d296-4ae7-82f1-f19142cf24ca",
+    "userId": "a6193f83-9e04-41ee-9661-087c775a8c0d",
+    "seatNumber": 65,
+    "price": 29.177672210924726,
+    "showtime": "2025-03-29T04:37:55.888Z"
+  }
+]

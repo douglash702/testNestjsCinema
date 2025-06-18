@@ -1,0 +1,56 @@
+{
+  "name": "nonfunctionalk6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test:post:movies:load": "k6 run test/movies/POST/loadMoviesPost.js",
+    "test:post:movies:smoke": "k6 run test/movies/POST/smokeMoviesPost.js",
+    "test:post:movies:soak:": "k6 run test/movies/POST/soakMoviesPost.js",
+    "test:post:movies:spike": "k6 run test/movies/POST/spikeMoviesPost.js",
+    "test:post:movies:stress": "k6 run test/movies/POST/stressMoviesPost.js",
+    
+    "test:delete:movies:load": "k6 run test/movies/DELETE/loadMoviesDel.js",
+    "test:delete:movies:smoke": "k6 run test/movies/DELETE/smokeMoviesDel.js",
+    "test:delete:movies:soak": "k6 run test/movies/DELETE/soakMoviesDel.js",
+    "test:delete:movies:spike": "k6 run test/movies/DELETE/spikeMoviesDel.js",
+    "test:delete:movies:stress": "k6 run test/movies/DELETE/stressMoviesDel.js",
+
+    "test:get:movies:load": "k6 run test/movies/GET/loadMoviesGet.js",
+    "test:get:movies:smoke": "k6 run test/movies/GET/smokeMoviesGet.js",
+    "test:get:movies:soak": "k6 run test/movies/GET/soakMoviesGet.js",
+    "test:get:movies:spike": "k6 run test/movies/GET/spikeMoviesGet.js",
+    "test:get:movies:stress": "k6 run test/movies/GET/stressMoviesGet.js",
+
+    "test:put:movies:load": "k6 run test/movies/PUT/loadMoviesPut.js",
+    "test:put:movies:smoke": "k6 run test/movies/PUT/smokeMoviesPut.js",
+    "test:put:movies:soak": "k6 run test/movies/PUT/soakMoviesPut.js",
+    "test:put:movies:spike": "k6 run test/movies/PUT/spikeMoviesPut.js",
+    "test:put:movies:stress": "k6 run test/movies/PUT/stressMoviesPut.js",
+    "test": "npm run test:post:movies:smoke && npm run test:delete:smoke && npm run test:get:movies:smoke && npm run test:put:movies:smoke",
+
+    "test:post:tickets:load": "k6 run test/tickets/POST/loadTicketsPost.js",
+    "test:post:tickets:smoke": "k6 run test/tickets/POST/smokeTicketsPost.js",
+    "test:post:tickets:soak": "k6 run test/tickets/POST/soakTicketsPost.js",
+    "test:post:tickets:spike": "k6 run test/tickets/POST/spikeTicketsPost.js",
+    "test:post:tickets:stress": "k6 run test/tickets/POST/stressTicketsPost.js",
+
+    "test:get:tickets:load": "k6 run test/tickets/GET/loadTicketsGet.js",
+    "test:get:tickets:smoke": "k6 run test/tickets/GET/smokeTicketsGet.js",
+    "test:get:tickets:soak": "k6 run test/tickets/GET/soakTicketsGet.js",
+    "test:get:tickets:spike": "k6 run test/tickets/GET/spikeTicketsGet.js",
+    "test:get:tickets:stress": "k6 run test/tickets/GET/stressTicketsGet.js",
+    "testTickets": "npm run test:post:tickets:smoke && npm run test:get:tickets:smoke"
+
+
+  },
+  "keywords": [],
+  "author": "Douglas Henrique Silva Lima",
+  "license": "MIT",
+  "description": "Teste de performance para API usando K6",
+  "dependencies": {
+    "@faker-js/faker": "^9.0.3" 
+  }
+}

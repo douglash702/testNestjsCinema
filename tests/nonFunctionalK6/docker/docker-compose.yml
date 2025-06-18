@@ -1,0 +1,15 @@
+services:
+  k6-test:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    image: k6teste
+    volumes:
+      - ../data:/data
+      - ../test:/test
+      - ../services:/services
+      - ../support:/support
+      - ../results:/results
+    environment:
+      API_BASE_URL: http://localhost:3000
+    command: run /test/movies/POST/smokeMoviesPost.js 
